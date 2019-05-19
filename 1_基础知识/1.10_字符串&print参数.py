@@ -1,12 +1,12 @@
-s1='hello\nword'
-s2='hello word2'
+s1='hello\nworld'
+s2='hello world2'
 print(str(s1))
 print(repr(s1))
 print('-'*100)
 
 #sep参数，默认空格，设置为sep，s1和s2用sep连接，
-s1='hello word'
-s2='hello word2'
+s1='hello world'
+s2='hello world2'
 print(s1,s2,sep='sep')
 print('-'*100)
 
@@ -33,3 +33,17 @@ print(r'wangji\nnyu/')
 # print(r'wangji\nnyu\')
 print(r'wangji\nnyu\\')
 print(r'wangji\nnyu'+'\\')
+
+print('-'*100)
+
+print('\u00C6')
+print('\U0001F60A')
+print('\N{cat}')
+print('\N{dog}')
+print('\N{fish}')
+print('-'*100)
+
+x=bytearray(b'hello world')
+print(x)
+x[0]=ord(b'r')
+print(x)
