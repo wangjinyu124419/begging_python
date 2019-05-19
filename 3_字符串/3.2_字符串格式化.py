@@ -1,4 +1,5 @@
 from  string import  Template
+
 format="hello,%s,hello,%s"
 values=('world','python')
 # format % values
