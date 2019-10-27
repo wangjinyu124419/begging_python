@@ -44,3 +44,20 @@ print(c.__class__)
 print(isinstance(c,Children))
 print(isinstance(c,Parent))
 print(isinstance(c,Grandfather))
+
+print(hasattr(list,'__len__'))
+print(getattr(list,'__len__'))
+print(callable(getattr(list,'__len__')))
+
+#抽象基类
+from abc import ABC ,abstractmethod
+class A(ABC):
+    @abstractmethod
+    def test(self):
+        pass
+
+class B():
+    def test(self):
+        print('test')
+b=B()
+print(isinstance(b,A))
