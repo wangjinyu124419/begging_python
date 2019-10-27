@@ -16,7 +16,6 @@ def fun(x,y):
     #异常上下文
     #raise ValueError from  None
 
-
 #warn只执行一次
 while True:
     warn('warning something')
