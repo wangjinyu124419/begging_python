@@ -1,0 +1,21 @@
+class Fibs():
+    def __init__(self):
+        self.a=1
+        self.b=1
+    def __next__(self):
+        self.a,self.b =  self.b,self.a+self.b
+        return self.a
+    def __iter__(self):
+        return self
+
+# fibs=Fibs()
+# for i in fibs:
+#     print(i)
+#     if i>100:
+#         break
+
+ls=[1,2,3]
+it=iter(ls)
+# print(next(ls))
+print(next(it))
+print(next(it))

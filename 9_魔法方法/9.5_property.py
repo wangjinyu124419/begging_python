@@ -14,6 +14,9 @@ class Children(Parent):
     def __init__(self):
         # super(Children,self).__init__()
         super().__init__()
+    @property
+    def fun(self):
+        pass
 
 
 child = Children()
